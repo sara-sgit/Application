@@ -10,7 +10,9 @@ p {
     line-height: 1.8;
 }
 a {
-    color: #79bc05;
+    
+    color: #407d99;
+
     text-decoration: none;
 }
 a:hover {
@@ -40,18 +42,20 @@ ol {
 #header {
     padding: 10px 100px;
     font-size: 20px;
-    background: bisque;
+    background: #407d99;
     color: #16b6df;
-    border-bottom: 10px solid #79bc05;
+    border-bottom: 10px solid #0f0f0f;
     overflow: auto;
 }
 
+
+
 #header .logo {
-    font-family: 'Muli', sans-serif;
+    font-family: 'sans serif';
     float: left;
-    color: rgb(37, 55, 211);
+    color: rgb(228 231 255);
     font-size: 28px;
-    margin-left: 30%;
+    margin-right: 30%;
     font-weight: bold;
     margin-top: 2%;
 }
@@ -68,14 +72,18 @@ ol {
     padding: 4px 10px;
 }
 
-#header ul.menu li.selected a,
-#header ul.menu li.selected a:hover {
-    color: #bc5bd7;
+
+#header ul.menu li.selected a, #header ul.menu li.selected a:hover {
+    color: #0f0b10;
     font-weight: bold;
+    font-family: 'Muli', sans-serif;
 }
 
+
 #header a {
-    color: cadetblue;
+    color: #0f0b10;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
 }
 
 #header a:hover {
@@ -112,7 +120,8 @@ label {
 input, textarea {
     clear: both;
     margin: 10px 10px;
-    background: #fffbfb;
+    background: #e9efff;
+    border-radius: 5px;
     border: 0;
     padding: 6px 10px;
     font-size: 14px;
@@ -120,9 +129,10 @@ input, textarea {
 
 input[type=submit], a.button {
     font-weight: bold;
-    background: #bc5bd7;
+    background: #50719d;
     color: #fffbfb;
     padding: 10px 20px;
+    border-radius: 4px;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -135,11 +145,13 @@ input[type=submit], a.button {
 }
 
 .helptext {
-    margin: 0 0 20px 0;
-    color: aliceblue;
-    float: left;
+    margin: 0;
+    padding: 0;
+    color: #6b7c8c;
     font-size: 13px;
+    clear: both; /* Clear the float to prevent layout issues */
 }
+
 
 /* Messages */
 ul.messages {

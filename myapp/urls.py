@@ -23,7 +23,8 @@ urlpatterns = [
     
     #user registration 
     
-    path('register/',views.register, name='register')
+    path('register/',views.register, name='register'),
+     path('teacher-dashboard/', views.teacher_dashboard, name='teacher_dashboard'),
     
 ]
 
